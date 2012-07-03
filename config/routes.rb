@@ -1,4 +1,9 @@
 Demo::Application.routes.draw do
+  resources :cars
+
+  match '/' => 'home#index'
+  match '/invoices' => 'home#invoices'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
